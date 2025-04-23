@@ -1,12 +1,12 @@
 # Requerimientos Funcionales (RF):
 
-RF01-Añadir, editar y eliminar tareas: el usuario debe ser capaz de crear, editar y eliminar estas tareas.
+RF01- Actividades asignables: las actividades o tareas tienen la opción de agregar imagenes.
 
-RF02- Actividades asignables: las actividades o tareas deben de poder ser asignadas tanto imagenes, acciones u otras parametros para diseñar mejor la actividad
+RF02- Seguimiento de calorias: La app debe de automaticamente sumar las calorias consumidas en el dia entregando un total al final del dia. 
 
-RF03-Recordatorios: las tareas creadas se les puede asignar si quiere el usuario que les recuerde esta actividad, esto puede ser tanto cada siertas cantidad de horas, o dias exactos en la semana.
+RF03-Recordatorios: las tareas creadas se les puede asignar si quiere el usuario que les recuerde esta actividad.
 
-RF04-Archivos de logeo de información: En estas el usuario debe de documentar su progreso del dia, este debe ser editable, compatible con imagenes y otras metricas.
+RF04-Reportar avances diarios: El usuario debe de documentar su progreso del dia.
 
 # Requerimientos No Funcionales (NF):
 
