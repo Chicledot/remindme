@@ -4,7 +4,7 @@ RF01- Actividades asignables: las actividades o tareas tienen la opción de agre
 
 RF02- Seguimiento de calorias: La app debe de automaticamente sumar las calorias consumidas en el dia entregando un total al final del dia. 
 
-RF03-Recordatorios: las tareas creadas se les puede asignar si quiere el usuario que les recuerde esta actividad.
+RF03-Recordatorios: El sistema permite al usuario activar notificaciones para las tareas creadas, estableciendo alertas personalizables que le avisen con anticipación sobre actividades programadas.
 
 RF04-El sistema debe ser capaz de documentar el progreso diario del usuario.
 
