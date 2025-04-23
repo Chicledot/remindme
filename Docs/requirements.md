@@ -6,7 +6,7 @@ RF02- Seguimiento de calorias: La app debe de automaticamente sumar las calorias
 
 RF03-Recordatorios: las tareas creadas se les puede asignar si quiere el usuario que les recuerde esta actividad.
 
-RF04-Reportar avances diarios: El usuario debe de documentar su progreso del dia.
+RF04-El sistema debe ser capaz de documentar el progreso diario del usuario.
 
 # Requerimientos No Funcionales (NF):
 
