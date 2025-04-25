@@ -5,6 +5,7 @@
 # Descripción:
 
 Usuario:
+
 1.- El usuario debe ingresar su peso y su estatura.
 
 2.- Luego debe ingresar los ejercicios a elección dada por la app.
