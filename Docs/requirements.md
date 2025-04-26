@@ -1,12 +1,12 @@
 # Requerimientos Funcionales (RF):
 
-RF01- Actividades asignables: las actividades o tareas tienen la opción de agregar imagenes.
+-RF01 Sistema de recordatorio: La app enviará notificaciones las cuales pueden ser configuradas en su frecuencia y fecha.
 
-RF02- Seguimiento de calorias: La app debe de automaticamente sumar las calorias consumidas en el dia entregando un total al final del dia. 
+- RF02 Sincronización con herramientas fitness: la app ocupará datos de herramientas de salud como relojes inteligentes para ayudar en el monitoreo de la actividad y categorizar mejor el tipo de ejercicio o resultado que el usuario obtenga.
 
-RF03-Recordatorios: las tareas creadas se les puede asignar si quiere el usuario que les recuerde esta actividad.
-
-RF04-El sistema debe ser capaz de documentar el progreso diario del usuario.
+- RF03 Entrenamientos personalizables: la app le dará entrenamientos planeados dependiendo de lo que el usuario quiera conseguir, por ejemplo, estos pueden ser que se enfoquen en un tipo de zona muscular exacta o simplemente que sea de quemar grasa.
+   
+- RF04 Seguimiento de calorias: La app debe de automaticamente sumar las calorias consumidas en el dia entregando un total al final del dia. Este puede ser configurado para cualquier momento del dia.
 
 # Requerimientos No Funcionales (NF):
 
