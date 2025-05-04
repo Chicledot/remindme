@@ -9,4 +9,3 @@ Este color fue escojido para el fondo en caso de que el usuario escoja el modo o
 Un simple color blanco se verá bien en cualquier fondo.
 
 Es importante resaltar que estos colores pueden ser editados por el usuario, así dandole su propio estilo a la app.
-
