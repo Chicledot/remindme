@@ -1,4 +1,4 @@
-# Justificacion de paletas de colores:
+ # Justificacion de paletas de colores:
 
 ## color principal: #FFBD33 
 Este color promueve energia al igual que es llamativo perfecto para una app de telefono.
