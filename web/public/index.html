@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RemindMe</title>
-    <link rel="stylesheet" href="/web/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="js/components/manifest.json">
 </head>
 <body>
-    
+    <h1>RemindMe</h1>
+    <ul>
+        <li><a href="#principal">Inicio</a></li>
+        <li><a href="#pagina2">Pagina2</a></li>
+        <li><a href="#pagina3">Pagina3</a></li>
+        <li style="float:right;"><a class="active" href="#acerca">Acerca de nosotros</a></li>
+    </ul>
+
+    <div id="principal" class="page">
+        <h2>Página Principal</h2>
+        <p>Bienvenido a la página principal.</p>
+         <p>mira a este gato</p>
+    <img src="/img/testimage.jpg" alt="Gato furioso">
+    </div>
+    <div id="pagina2" class="page">
+        <h2>Recordatorios activos</h2>
+        <reminder-card></reminder-card>
+    </div>
+    <div id="pagina3" class="page">
+        <h2>Página 3</h2>
+        <p>Contenido de la página 3.</p>
+         <p>mira a este conejo</p>
+    <img src="/img/testimage_pag3.jpg" alt="Conejo comiendo lechuga">
+    </div>
+    <div id="acerca" class="page">
+        <h2>Acerca de nosotros</h2>
+        <p>Información sobre nosotros.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus ante ante, nec placerat dui suscipit at. Aliquam feugiat nisl nec odio mattis egestas.</p>
+    </div>
+    <!-- Move your script here -->
+    <script src="js/components/main.js"></script>
 </body>
 </html>

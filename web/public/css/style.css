@@ -1,0 +1,80 @@
+.header {
+    background-color: #FFBD33;
+    text-align: center;
+    padding: 20px;
+}
+
+
+h1 {
+    background-color: chocolate;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:xx-large;
+
+}
+ul{
+    position: sticky;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    display: inline;
+    float: left;
+  }
+  
+ li a {
+    display: block;
+    padding: 14px 16px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color:deepskyblue;
+  }
+
+.active {
+    background-color: chocolate;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+/* Hide all pages by default */
+.page {
+    display: none;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+/* Show the targeted page */
+.page:target {
+    display: block;
+    opacity: 1;
+}
+
+/* Optionally, show the first page if no hash is present */
+.page:first-of-type:target,
+.page:first-of-type:not(:target) {
+    display: block;
+    opacity: 1;
+}
+
+/* Uniform image size for all images inside .page sections */
+.page img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* centers the image and adds spacing */
+    border-radius: 12px; /* optional: rounded corners for better look */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4); /* optional: subtle shadow */
+}
