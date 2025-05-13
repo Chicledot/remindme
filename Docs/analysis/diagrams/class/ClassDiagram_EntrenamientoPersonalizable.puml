@@ -1,0 +1,44 @@
+@startuml Entrenamientos Personalizables RF03
+
+title Diagrama de Clases - RF03 Entrenamientos Personalizables
+
+class Usuario {
+    - id: int
+    - nombre: string
+    + crearRutina(nombre: string): Rutina
+    + editarRutina(rutina: Rutina): void
+    + verRutinas(): List<Rutina>
+}
+
+class Rutina {
+    - id: int
+    - nombre: string
+    - objetivo: string
+    - duracion: int
+    - tiempoDescanso: int
+    + agregarEjercicio(ejercicio: Ejercicio): void
+    + eliminarEjercicio(ejercicio: Ejercicio): void
+    + ajustarDuracion(nuevaDuracion: int): void
+    + ajustarDescanso(nuevoDescanso: int): void
+}
+
+class Ejercicio {
+    - id: int
+    - nombre: string
+    - zonaMuscular: string
+    - repeticiones: int
+    - series: int
+    + editar(nombre: string, zonaMuscular: string, repeticiones: int, series: int): void
+}
+
+class TipEdicion {
+    - id: int
+    - contenido: string
+    + mostrarTip(): string
+}
+
+Usuario "1" -- "0..*" Rutina : crea >
+Rutina "1" -- "0..*" Ejercicio : contiene >
+Rutina "0..*" -- "0..*" TipEdicion : sugiere >
+
+@enduml

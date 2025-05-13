@@ -1,4 +1,4 @@
-@startuml SeguimientoCaloriasRF02
+@startuml SeguimientoCaloriasRF04
 class Usuario {
     - id: int
     - nombre: string

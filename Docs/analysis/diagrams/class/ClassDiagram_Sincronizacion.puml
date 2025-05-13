@@ -1,0 +1,40 @@
+@startuml RF02 Sincronización con Herramientas Fitness 
+
+title Diagrama de Clases - RF02 Sincronización con Herramientas Fitness
+
+class Usuario {
+    - id: int
+    - nombre: string
+    + sincronizarDispositivo(dispositivo: Dispositivo): void
+    + importarDatosSalud(): List<DatoSalud>
+    + verMetricasActividad(): List<MetricaActividad>
+}
+
+class Dispositivo {
+    - id: int
+    - nombre: string
+    - tipo: string
+    + conectar(): bool
+    + obtenerDatosSalud(): List<DatoSalud>
+}
+
+class DatoSalud {
+    - id: int
+    - tipo: string
+    - valor: float
+    - fecha: date
+}
+
+class MetricaActividad {
+    - id: int
+    - nombre: string
+    - valor: float
+    - fecha: date
+    + analizarProgreso(): string
+}
+
+Usuario "1" -- "0..*" Dispositivo : sincroniza >
+Dispositivo "1" -- "0..*" DatoSalud : exporta >
+Usuario "1" -- "0..*" MetricaActividad : consulta >
+
+@enduml
