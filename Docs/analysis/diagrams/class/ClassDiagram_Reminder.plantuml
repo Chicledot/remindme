@@ -1,0 +1,38 @@
+@startuml SistemaRecordatorioRF01
+
+class Usuario {
+    - id: int
+    - nombre: string
+    - email: string
+    + crearRecordatorio(titulo: string, descripcion: string, fecha: date): Recordatorio
+    + verRecordatorios(): List<Recordatorio>
+    + marcarComoCumplido(recordatorio: Recordatorio): void
+}
+
+class Recordatorio {
+    - id: int
+    - titulo: string
+    - descripcion: string
+    - fecha: date
+    - cumplido: bool
+    + marcarCumplido(): void
+    + categorizar(categoria: Categoria): void
+}
+
+class Categoria {
+    - id: int
+    - nombre: string
+}
+
+class Notificacion {
+    - id: int
+    - mensaje: string
+    - fechaEnvio: date
+    + enviar(usuario: Usuario): void
+}
+
+Usuario "1" -- "0..*" Recordatorio : crea >
+Recordatorio "0..*" -- "1" Categoria : pertenece a >
+Usuario "1" -- "0..*" Notificacion : recibe >
+
+@enduml
