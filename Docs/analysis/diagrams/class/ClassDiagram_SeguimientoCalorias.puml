@@ -1,0 +1,51 @@
+@startuml SeguimientoCaloriasRF04
+class Usuario {
+    - id: int
+    - nombre: string
+    - peso: float
+    - altura: float
+    + ingresarPeso(peso: float): void
+    + ingresarAltura(altura: float): void
+    + registrarAlimento(alimento: Alimento, cantidad: float): void
+    + registrarEjercicio(ejercicio: Ejercicio, duracion: int): void
+    + verResumenDiario(): ResumenDiario
+}
+
+class Alimento {
+    - id: int
+    - nombre: string
+    - caloriasPorPorcion: float
+}
+
+class Ejercicio {
+    - id: int
+    - nombre: string
+    - caloriasQuemadasPorMinuto: float
+}
+
+class RegistroAlimento {
+    - fecha: date
+    - cantidad: float
+    - caloriasTotales: float
+}
+
+class RegistroEjercicio {
+    - fecha: date
+    - duracion: int
+    - caloriasQuemadas: float
+}
+
+class ResumenDiario {
+    - fecha: date
+    - caloriasConsumidas: float
+    - caloriasQuemadas: float
+    - caloriasNetas: float
+    + calcularNetas(): float
+}
+
+Usuario "1" -- "0..*" RegistroAlimento : registra >
+Usuario "1" -- "0..*" RegistroEjercicio : realiza >
+Usuario "1" -- "0..*" ResumenDiario : tiene >
+RegistroAlimento "0..*" -- "1" Alimento : refiere >
+RegistroEjercicio "0..*" -- "1" Ejercicio : refiere >
+@enduml
