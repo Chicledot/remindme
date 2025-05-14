@@ -13,8 +13,8 @@
 
 ## Enfoque de Ruteo
 
-**Tipo:** Ruteo con CSS usando `:target`  
-**Justificación:**  
+**Tipo:** Ruteo con CSS usando `:target` 
+**Justificación:**
 Se utiliza el selector CSS `:target` para mostrar/ocultar secciones de la SPA según el hash de la URL. Esto permite navegación instantánea entre "páginas" sin recargar el sitio, manteniendo la simplicidad y sin necesidad de JavaScript adicional para el ruteo.
 
 **Código clave:**
@@ -56,7 +56,7 @@ Se utiliza el selector CSS `:target` para mostrar/ocultar secciones de la SPA se
 
 ## Web Component Creado
 
-**Etiqueta:** `<reminder-card>`  
+**Etiqueta:** `<reminder-card>`
 **Propósito:** Permitir al usuario crear y visualizar recordatorios en formato de tarjetas, agregando título y descripción, y mostrándolos en una cuadrícula.
 
 **Código clave:**
@@ -119,9 +119,9 @@ customElements.define('reminder-card', ReminderCard);
 
 ---
 
-## Relación con Arquitecturas SPA
+## Relación con Arquitecturas PWA
 
-Este enfoque implementa una SPA (Single Page Application) básica, donde la navegación entre secciones no recarga la página. El ruteo se maneja con CSS y el contenido dinámico (recordatorios) se gestiona con Web Components nativos, manteniendo el código modular y reutilizable.
+Este enfoque implementa una PWA (Progressive Web App) básica, con un enfoque en el contenido offline. El ruteo se maneja con CSS y el contenido dinámico (recordatorios) se gestiona con Web Components nativos y un Service Worker, manteniendo el código modular y reutilizable.
 
 ---
 
@@ -150,5 +150,5 @@ Este enfoque implementa una SPA (Single Page Application) básica, donde la nave
 ---
 
 **Autor:**
-Diego  y Copilot.
+Diego
 Fecha: 2025-05-11
