@@ -10,33 +10,47 @@
 <body>
     <h1>RemindMe</h1>
     <ul>
-        <li><a href="#principal">Inicio</a></li>
-        <li><a href="#pagina2">Pagina2</a></li>
-        <li><a href="#pagina3">Pagina3</a></li>
+        <li><a href="#login">Inicio</a></li>
+        <li><a href="#recordatorios">Recordatorios</a></li>
         <li style="float:right;"><a class="active" href="#acerca">Acerca de nosotros</a></li>
     </ul>
 
-    <div id="principal" class="page">
-        <h2>Página Principal</h2>
-        <p>Bienvenido a la página principal.</p>
-         <p>mira a este gato</p>
-    <img src="/img/testimage.jpg" alt="Gato furioso">
+    <div id="login" class="page">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Usuario" required>
+            <input type="password" id="login-password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="#" id="show-register">Regístrate</a></p>
+        <div id="login-error" style="color:red"></div>
     </div>
-    <div id="pagina2" class="page">
-        <h2>Recordatorios activos</h2>
-        <reminder-card></reminder-card>
+    <div id="register" class="page" style="display:none;">
+        <h2>Registro</h2>
+        <form id="register-form">
+            <input type="text" id="register-username" placeholder="Usuario" required>
+            <input type="password" id="register-password" placeholder="Contraseña" required>
+            <select id="register-role">
+                <option value="user">Usuario</option>
+                <option value="admin">Administrador</option>
+            </select>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="#" id="show-login">Inicia sesión</a></p>
+        <div id="register-error" style="color:red"></div>
     </div>
-    <div id="pagina3" class="page">
-        <h2>Página 3</h2>
-        <p>Contenido de la página 3.</p>
-         <p>mira a este conejo</p>
-    <img src="/img/testimage_pag3.jpg" alt="Conejo comiendo lechuga">
+    <div id="recordatorios" class="page">
+        <h2>Recordatorios</h2>
+        <button id="logout-btn" style="display:none;">Cerrar sesión</button>
+        <editable-list></editable-list>
+        <div id="reminder-error" style="color:red"></div>
     </div>
     <div id="acerca" class="page">
         <h2>Acerca de nosotros</h2>
         <p>Información sobre nosotros.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus ante ante, nec placerat dui suscipit at. Aliquam feugiat nisl nec odio mattis egestas.</p>
     </div>
-    <script src="js/components/main.js"></script>
+    <script src="js/components/EditableList.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -4,15 +4,15 @@
     padding: 20px;
 }
 
-
 h1 {
     background-color: chocolate;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:xx-large;
-
+    margin-bottom: 0.5em;
 }
-ul{
+
+ul {
     position: sticky;
     top: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -27,18 +27,18 @@ ul{
 li {
     display: inline;
     float: left;
-  }
-  
- li a {
+}
+
+li a {
     display: block;
     padding: 14px 16px;
     color: black;
     text-align: center;
     text-decoration: none;
-  }
-  li a:hover {
+}
+li a:hover {
     background-color:deepskyblue;
-  }
+}
 
 .active {
     background-color: chocolate;
@@ -54,6 +54,12 @@ p {
     display: none;
     transition: opacity 0.5s;
     opacity: 0;
+    max-width: 600px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2em 2em 1em 2em;
 }
 
 /* Show the targeted page */
@@ -74,7 +80,95 @@ p {
     width: 300px;
     height: auto;
     display: block;
-    margin: 20px auto; /* centers the image and adds spacing */
-    border-radius: 12px; /* optional: rounded corners for better look */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4); /* optional: subtle shadow */
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* --- Forms --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    margin-bottom: 1em;
+}
+
+form input, form select, form button {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: chocolate;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+form button:hover {
+    background: #ffbd33;
+    color: #222;
+}
+
+/* --- Editable List Table --- */
+editable-list {
+    display: block;
+    margin-top: 1em;
+}
+
+.editable-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.editable-list-table th, .editable-list-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.editable-list-table th {
+    background: #f3f3f3;
+}
+
+.editable-list-table button {
+    margin: 0 2px;
+    padding: 0.3em 0.7em;
+    border-radius: 4px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.editable-list-table button:hover {
+    background: deepskyblue;
+    color: #fff;
+}
+
+/* Error messages */
+#login-error, #register-error, #reminder-error {
+    color: #c00;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+/* Logout button */
+#logout-btn {
+    float: right;
+    margin-bottom: 1em;
+    background: #ffbd33;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#logout-btn:hover {
+    background: chocolate;
+    color: #fff;
 }
